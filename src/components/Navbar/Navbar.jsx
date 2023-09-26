@@ -11,16 +11,17 @@ const Navbar = () => {
         <a href='/'><img src={navLogo} alt='logo' /></a>
       </div>
 
-      <div className='logo-header text-center'>
+      <div className='logo-header text-center max-sm:py-3'>
         <h2 className='text-green-950 font-bold tracking-wider
-        text-2xl'>
+        text-2xl max-sm:text-sm'>
           NATIONAL YOUTH SERVICE CORPS
         </h2>
-        <h2 className='text-red-600 font-bold tracking-wider'>SERVICE AND HUMILITY</h2>
+        <h2 className='text-red-600 font-bold max-sm:font-semibold
+        tracking-wider'>SERVICE AND HUMILITY</h2>
       </div>
 
       <div className='nav-links flex gap-5 
-      items-center justify-between px-3'>
+      items-center justify-between px-3 max-sm:hidden'>
         <a href='/'>Home</a>
         <a>Corps Members</a>
         <a href='/assignment'>Assigned Members</a>

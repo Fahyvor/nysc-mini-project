@@ -14,3 +14,13 @@
 .register {
     border: 1px solid white;
 }
+
+@media screen and (max-width: 800px) {
+    .homepage-body {
+        height: 100vh;
+    }
+
+    .homepage-shadow {
+        height: 100vh;
+    }
+}
