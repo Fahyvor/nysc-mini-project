@@ -23,7 +23,7 @@ const Navbar = () => {
       <div className='nav-links flex gap-5 
       items-center justify-between px-3 max-sm:hidden'>
         <a href='/'>Home</a>
-        <a>Corps Members</a>
+        <a href='/members'>Corps Members</a>
         <a href='/assignment'>Assigned Members</a>
 
         <div className='rounded-lg p-3 contact-container'>
