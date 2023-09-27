@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import './navbar.css'
-import navLogo from '../../assets/logo.jpeg'
+import navLogo from '../../assets/logo.jpeg';
+import { FaThreeBars } from 'react-icons/fa'
+
 
 const Navbar = () => {
 
@@ -19,6 +21,8 @@ const Navbar = () => {
         <h2 className='text-red-600 font-bold max-sm:font-semibold
         tracking-wider'>SERVICE AND HUMILITY</h2>
       </div>
+
+      <FaThreeBars />
 
       <div className='nav-links flex gap-5 
       items-center justify-between px-3 max-sm:hidden'>
