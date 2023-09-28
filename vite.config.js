@@ -1,7 +1,8 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react-swc'
-
-// https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [react()],
-})
+export default {
+  // Other Vite config options...
+  build: {
+    rollupOptions: {
+      input: '/src/main.jsx', // Update this path accordingly
+    },
+  },
+};
