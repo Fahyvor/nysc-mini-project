@@ -1,6 +1,10 @@
 import './homepage.css'
+import { useNavigate } from 'react-router-dom'
 
 const Homepage = () => {
+
+  const navigate = useNavigate();
+
   return (
     <div className='homepage-body container-fluid'>
         <div className='homepage-shadow pt-5'>
@@ -17,12 +21,12 @@ const Homepage = () => {
             <div className='body-buttons flex justify-center mt-5 pt-5 gap-5'>
               <div className='login p-2 w-1/6 max-sm:w-1/3 flex justify-center 
               rounded-xl bg-slate-50 text-green-950'>
-                <a href='/login'>Log In</a>
+                <a href='/login' onClick={() => navigate('/login')}>Log In</a>
               </div>
 
               <div className='register w-1/6 max-sm:w-1/3 flex justify-center 
               items-center rounded-xl text-slate-50'>
-                <a href='/register'>Register</a>
+                <a href='/register' onClick={() => navigate('/register')}>Register</a>
               </div>
             </div>
         </div>

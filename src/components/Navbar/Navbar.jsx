@@ -2,9 +2,11 @@ import { useState } from 'react'
 import './navbar.css'
 import navLogo from '../../assets/logo.jpeg';
 import { FaThreeBars } from 'react-icons/fa'
-
+import { useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
+
+  const navigate = useNavigate();
 
   return (
     <>
@@ -26,9 +28,9 @@ const Navbar = () => {
 
       <div className='nav-links flex gap-5 
       items-center justify-between px-3 max-sm:hidden'>
-        <a href='/'>Home</a>
-        <a href='/members'>Corps Members</a>
-        <a href='/assignment'>Assigned Members</a>
+        <a href='/' onClick={() => navigate('/')}>Home</a>
+        <a href='/members' onClick={() => navigate('/members')}>Corps Members</a>
+        <a href='/assignment' onClick={() => navigate('/')}>Assigned Members</a>
 
         <div className='rounded-lg p-3 contact-container'>
           <a>Contact Us</a>
