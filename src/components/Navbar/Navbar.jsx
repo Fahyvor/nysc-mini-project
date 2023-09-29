@@ -1,10 +1,13 @@
+import React from 'react';
 import { useState } from 'react'
 import './navbar.css'
 import navLogo from '../../assets/logo.jpeg';
-import { FaThreeBars } from 'react-icons/fa'
+import { FaBars } from 'react-icons/fa'
 import { useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
+
+  const [show, setShow] = useState(false)
 
   const navigate = useNavigate();
 
@@ -24,7 +27,15 @@ const Navbar = () => {
         tracking-wider'>SERVICE AND HUMILITY</h2>
       </div>
 
-      <FaThreeBars />
+      <FaBars size={35} onClick={() => setShow(true)}/>
+      {show ? (
+        <div className='bg-white absolute flex flex-col w-full text-center mt-9
+        pt-5 gap-5'>
+          <a href='/' onClick={() => navigate('/')}>Home</a>
+          <a href='/members' onClick={() => navigate('/members')}>Corps Members</a>
+          <a href='/assignment' onClick={() => navigate('/')}>Assigned Members</a>
+        </div>
+      ): null}
 
       <div className='nav-links flex gap-5 
       items-center justify-between px-3 max-sm:hidden'>

@@ -1,11 +1,11 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Navbar from './src/components/Navbar/Navbar'
-import Homepage from './src/components/Homepage/Homepage'
-import Login from './src/components/Login/Login'
-import Register from './src/components/Register/Register'
-import Members from './src/components/Members/Members'
-import Assignment from './src/components/PrimaryAssignment/Assignment'
+import Navbar from './components/Navbar/Navbar'
+import Homepage from './components/Homepage/Homepage'
+import Login from './components/Login/Login'
+import Register from './components/Register/Register'
+import Members from './components/Members/Members'
+import Assignment from './components/PrimaryAssignment/Assignment'
 
 
 const App = () => {
